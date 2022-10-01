@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --bg-color: #FFFFFF;
+    --base-color: 194;
+    --text-color: #323238;
+    --bg-primary-color: #E1E1E6;
+    --bg-second-color: hsl(var(--base-color), 97%, 31%);
+
+
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    place-items: center;
+
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+button img {
+    width: clamp(3.2rem, 2rem + 6vw, 4.8rem);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 19.8rem;
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+
+#time {
+    font-size: clamp(4rem, 4rem + 10vw, 12.6rem);
+
+    display: flex;
+    margin-bottom: 1.6rem;
+}
+
+#controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.cards__sounds {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+}
+
+.cards__sounds button {
+    /* width: 138px;
+    height: 152px; */
+
+    background: #E1E1E6;
+    border-radius: 2.4rem;
+    padding: 4.2rem;
+}
